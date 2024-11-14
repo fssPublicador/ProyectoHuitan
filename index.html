@@ -420,8 +420,8 @@
             {label: 'Proyecto Huitán<br /><table><tr><td style="text-align: center;"><img src="legend/ProyectoHuitn_4_PuntoA0.png" /></td><td>Punto A</td></tr><tr><td style="text-align: center;"><img src="legend/ProyectoHuitn_4_PuntoB1.png" /></td><td>Punto B</td></tr><tr><td style="text-align: center;"><img src="legend/ProyectoHuitn_4_PuntoC2.png" /></td><td>Punto C</td></tr></table>', layer: layer_ProyectoHuitn_4},
             {label: 'Referencias<br /><table><tr><td style="text-align: center;"><img src="legend/Referencias_3_Bifurcación0.png" /></td><td>Bifurcación</td></tr><tr><td style="text-align: center;"><img src="legend/Referencias_3_Campamento1.png" /></td><td>Campamento</td></tr><tr><td style="text-align: center;"><img src="legend/Referencias_3_Escuela2.png" /></td><td>Escuela</td></tr></table>', layer: layer_Referencias_3},
             {label: '<img src="legend/Intervencin_2.png" /> Intervención', layer: layer_Intervencin_2},
-            {label: "Google Satellite", layer: layer_GoogleSatellite_1, radioGroup: 'bm' },
-            {label: "Google Road", layer: layer_GoogleRoad_0, radioGroup: 'bm' },]
+            {label: "Google Satélite", layer: layer_GoogleSatellite_1, radioGroup: 'bm' },
+            {label: "Google Caminos", layer: layer_GoogleRoad_0, radioGroup: 'bm' },]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
             //selectorBack: false,
@@ -602,7 +602,7 @@
             sel_Lugar.multiple = true;
             sel_Lugar.size = 7;
             sel_Lugar.id = "sel_Lugar";
-            var Lugar_options_str = "<option value='' unselected>-Nimguno-</option>";
+            var Lugar_options_str = "<option value='' unselected>-Ninguno-</option>";
             sel_Lugar.onchange = function(){filterFunc()};
             Lugar_options_str  += '<option value="Punto A">Punto A</option>';
             Lugar_options_str  += '<option value="Punto B">Punto B</option>';
